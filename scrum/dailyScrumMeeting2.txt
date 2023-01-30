@@ -1,0 +1,101 @@
+# Fill in, commit and push each day.
+# Group Member: @liangc60
+Oct 28, 2018
+	Yesterday : n/a
+	Today     : n/a
+	Obstacles : n/a
+
+Oct 29, 2018
+	Yesterday : n/a
+	Today     : n/a
+	Obstacles : n/a
+
+Oct 30, 2018
+	Yesterday : n/a
+	Today     : n/a
+	Obstacles : n/a
+
+Oct 31, 2018
+	Yesterday : n/a
+	Today     : distrubuted user stories/bugs
+	Obstacles : n/a
+
+Nov 1, 2018
+	Yesterday : distrubuted user stories/bugs
+	Today     : n/a
+	Obstacles : personally? i lack sleep.
+
+Nov 2, 2018
+	Yesterday : n/a
+	Today     : working on user story 5, color selecting
+	Obstacles : how to fix so that not all the colors get overwritten?
+
+Nov 3, 2018
+	Yesterday : how to fix so that not all the colors get overwritten?
+	Today     : found the color selector, plopped onto middle of screen
+	Obstacles : format said color selector. fill vs stroke needs different implementations
+
+Nov 4, 2018
+	Yesterday : found the color selector, plopped onto middle of screen
+	Today     : tried to put colors in individual shapes, way too many loops
+	Obstacles : gonna refactor code and put draw in each shape to streamline work
+
+Nov 5, 2018
+	Yesterday :tried to put colors in individual shapes, way too many loops
+	Today     : n/a
+	Obstacles : n/a
+
+Nov 6, 2018
+	Yesterday : n/a		
+	Today     : Finished Bug11!!!!!!!!!!!!
+	Obstacles : There's still a little wonkiness with color application, but for now it's good enough.
+
+Nov 7, 2018
+	Yesterday : Finished Bug11!
+	Today     : Roy fixed color bug from prev. I didn't do anything today overfraught with Stats.
+	Obstacles : n/a
+
+Nov 8, 2018
+	Yesterday : n/a
+	Today     : finished userstory6 , can now fill in rectangle and circle. will add for other shapes 
+				once they are implemented
+	Obstacles : the value of fill does not carry over once a new shape is selected.
+
+Nov 9, 2018
+	Yesterday : finished userstory6 , can now fill in rectangle and circle. will add for other shapes 
+				once they are implemented
+	Today     : value of fill now carries over
+	Obstacles : working on eraser Tool tmrw
+
+Nov 10, 2018
+	Yesterday :
+	Today     : n/a
+	Obstacles :
+
+Nov 11, 2018
+	Yesterday : oops.
+	Today     : finished eraser Tool (user story 11)
+	Obstacles : fought between eraser being a shape or eraser being a shape attribute... all fixed.
+	
+Nov 12, 2018
+	Yesterday : finished eraser Tool (user story 11)
+	Today     : edited backlog, added new user stories to work(panic) on
+	Obstacles : figuring out what other components would be useful for paint
+	
+Nov 13, 2018
+	Yesterday : edited backlog, added new user stories to work(panic) on
+	Today     : worked on UserStory15, the eyedropper "works" but only once. 
+			finished userstory14
+	Obstacles : Can't figure out how to get the value of eyedropper to change. is it because the file isn't updated?
+
+Nov 14, 2018
+	Yesterday : worked on UserStory15, finished userstory14
+	Today     : studied for 236, however worked on bug 37 (although it wasn't in the backlog yet)
+	Obstacles : can't figure out what is causing issue with wrong color selection
+
+Nov 15, 2018
+	Yesterday : worked on bug37
+	Today     : finished bug 37. working on javadocs
+	Obstacles : so many javadocs
+
+

@@ -1,0 +1,91 @@
+# Fill in, commit and push each day.
+# Group Member: FILL THIS IN
+Oct 28, 2018
+	Yesterday : N/A
+	Today     : N/A
+	Obstacles : N/A
+
+Oct 29, 2018
+	Yesterday : N/A
+	Today     : N/A
+	Obstacles : N/A
+
+Oct 30, 2018
+	Yesterday : N/A
+	Today     : Assigned and Delegated UserStories/Bugs. 
+	Obstacles : N/A
+
+Oct 31, 2018
+	Yesterday : Assigned tasks
+	Today     : Completed Bugs 2 and 6, made ShapeChooserPanel use a button array instead of building unreachable buttons
+	Obstacles : Need to find a way to create simple shapes for button icons. If impossible, then need to find png files of shapes for labels
+
+Nov 1, 2018
+	Yesterday : Helped out with Rectangle UserStories
+	Today     : Finished Bug 1 and repaired it for Linux distros
+	Obstacles : Realized that Linux cares about capitalization. 
+
+Nov 2, 2018
+	Yesterday : Completed Bug 1
+	Today     : Got bored and completed Bugs 3 and 4
+	Obstacles : Need to write documentation
+
+Nov 3, 2018
+	Yesterday : Completed Bugs 3 and 4
+	Today     : Need to write documentation for Bugs 3 and 4, as well as ironing out problems
+	Obstacles : Need to make sure new code works with interfaces
+
+Nov 4, 2018
+	Yesterday : Worked on ironing out group problems
+	Today     : Unable to work, Studying for stats
+	Obstacles : Statistics test
+
+Nov 5, 2018
+	Yesterday : Studied for test
+	Today     : Continue to study for test
+	Obstacles : Statistics test
+
+Nov 6, 2018
+	Yesterday : Studied for test
+	Today     : Test. Time to work on bugs
+	Obstacles : Test over, relearn Command 
+
+Nov 7, 2018
+	Yesterday : Delegated work
+	Today     : Worked on unrelated project
+	Obstacles : Other project requires work done now
+
+Nov 8, 2018
+	Yesterday : Unable to work on ASGN2
+	Today     : Edits performed on Backlogs to clean up
+	Obstacles : Still working on unrelated project
+
+Nov 9, 2018
+	Yesterday : Cleaned up backlog
+	Today     : Should be completing unrelated project
+	Obstacles : Still working on unrelated project, need to read up on Factory design
+
+Nov 10, 2018
+	Yesterday : Read up on Factory and Command, ready to work
+	Today     : Working on Bug 8 and 9
+	Obstacles : Realized Bug 10 was incidentally completed by Bug3 and 4
+	
+Nov 11, 2018
+	Yesterday : Read up on Factory and Command
+	Today     : Implemented Command for drawing properties
+	Obstacles : 236 Test soon, must study
+	
+Nov 12, 2018
+	Yesterday : Completed Command
+	Today     : Studied for 236 test, unable to work
+	Obstacles : Test soon
+
+Nov 13, 2018
+	Yesterday : Studying for test
+	Today     : Still Studying
+	Obstacles : Test tmrw
+
+Nov 14, 2018
+	Yesterday : Studied for test
+	Today     : Completed Factory, and finishing up Architecture
+	Obstacles : Must do Architecture soon, as well as javadoc

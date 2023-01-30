@@ -1,0 +1,85 @@
+# Please discuss your architectural decisions below.
+
+High Level Architecture:
+
+	MVC
+	To keep the code simple, a partial MVC was implemented.
+	
+	Model
+	The Model captures enough information to re-draw the sketch of
+	the user.
+	
+	View+Controller
+	There is a View class as well as a few, what we call, view components.
+	The View class captures the Stage as well
+	as containing all of its components.
+	View components are meant to be contained in the main View.
+	Examples of view components are PaintPanel and ShapeChooserPanel.
+	
+	The View class, and view components all implements their own controller.
+	For example, the PaintPanel listens to its own MouseEvents.
+	This is instead of separating out the Controller from the View. This choice
+	was made to simplify the code, yet still keep it modular and clear.
+	
+	Each view component can see the containing View as well as the Model
+	as appropriate. This means that each view component can speak to the
+	other view components. An example of this is when the ShapeChooserPanel
+	buttons are clicked, resulting in a mode change in the PaintPanel.
+	
+---------------------------------------------------------------------
+TODO!!! Add in more architecture and discussion. For example, 
+do you do something interesting to fix the association between the 
+ShapeChooser and the PaintPanel? How about the PaintModel, something
+is clearly wrong with it. Can you come up with a better architecture?
+---------------------------------------------------------------------
+
+DESIGN PATTERNS USED
+	TODO!!! If you introduce a Design Pattern to solve a problem, 
+	discuss it below. Only add design patterns if they simplify and improve
+	the code. I see at least two that would greatly improve code. 
+		
+	Strategy:
+	Implemented Strategy for the reading of shapes. ReadInterface strategies Read[shapename]
+	each know how to create their own respective shapes, so that PaintModel does not need to
+	know how each shape is read from the canvas
+	
+	Command: 
+	Command was implemented for the tools and draw properties using ToolCommand and DrawCommand
+	interfaces respectively. These commands make it much easier to create and undo/redo changes.
+	They also make it so that PaintPanel and ReadInterface don't need to know how to draw each
+	shape.
+	
+	Singleton:
+	Not Used
+	
+	Composite:
+	Not Used
+	
+	Factory:
+	Used in ReadInterface to create new shapes. This way, ToolChooserPanel doesn't need to initialize
+	a new ReadInterface every time, and instead has ReadInterface create it.
+	
+	Builder:
+	Not Used
+	
+	Observer/Observable:
+	Not Used
+
+OTHER ARCHITECTURE DISCUSSIONS
+	Adding DrawCommands via the Paint Panel:
+	Previously shape modifier panels/events (denoted as DrawCommands) had to access the paint panel where
+	methods existed to create a DrawCommand and add it to the model. This was changed over so that the
+	the panel/event themselves created a draw command and added it to the model directly.
+	
+	Added new view component ShapePropertyPanel:
+	Early on, implementations of modifiers to shapes were just added straight onto view which
+	made a view messy. We realized that we can class these modifiers under one class and much like
+	ShapeChooserPanel, add it to view as a gridpane. This way the code is more modular everything related
+	to modifying shape properties and only things related to it are placed into a single class.
+	
+	Command design and Undo/Redo:
+	Turns out implmenting this design pattern makes undo and redoing commands so much simpler. Every tool
+	used onto the canvas is classed under the same type of a command and in this way, despite them differing
+	greatly in actual functions, they can be placed all into the same list. And therefore, they can be treated
+	all the same way as it's just a simple remove from the list or adding back to the list for
+	the basical functionality of undo/redo.

@@ -1,0 +1,760 @@
+# User Stories/Bugs (add as appropriate), modify at each Sprint Planning Meeting
+# If a USER STORY is large, break it into smaller user stories.
+# For example, the color chooser user story involves: 
+# 1 Color chooser UI (which could be a USER STORY)
+# 2 Implementation of selected color into the drawing stream.
+
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+# COMPLETED USER STORIES/BUGS BELOW ######################################
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 1 : LAURUSSE
+NAME     : Draw Circle
+OWNER    : Russell Lau
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To click the center of the circle, drag, and release to specify
+           a circle to be drawn in the current style.
+SO THAT  : I can add circles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 2 : LAURUSSE
+NAME     : Draw Circle Feedback
+OWNER    : Russell Lau
+PRIORITY : Sprint 1
+ESTIMATE :  Friday, November 2
+AS A     : user
+I WANT   : As a user is specifying a Circle, during the drag, a 'current'
+           circle should be on display. As the user drags, the 'current'
+           circle changes in real time so that a circle is drawn with
+           centre at users initial circle click, with radius out to
+           the current dragged mouse position.
+SO THAT  : I can see the circle I am about to build on release of the mouse
+           button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 3 : LAURUSSE
+NAME     : Draw Rectangle
+OWNER    : Russell Lau
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To click on one corner of a rectangle, drag, and release to 
+		   specify two corners of a rectangle to be drawn in the current style.
+SO THAT  : I can add rectangles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 4 : LAURUSSE
+NAME     : Draw Rectangle Feedback
+OWNER    : Russell Lau
+PRIORITY :Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
+SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 5 : LIANGC60
+NAME     : Color selector
+OWNER    : Coco Liang
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To be able to select the current drawing color, to be applied
+           to subsequent shapes. Example: 
+           		selects color red 
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select color green
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two red circles and a red rectangle as well as
+           	two green rectangles and a green squiggle
+SO THAT  : 
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+TYPE     : USER STORY 6 : LIANGC60
+NAME     : Fill style selector
+OWNER    : Coco Liang
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To be able to select the current drawing style (filled or outline), to be applied
+           to subsequent shapes. Example: 
+           		selects fill style solid
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select fill style outline
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two solid circles and a solid rectangle as well as
+           	two outlined rectangles and a squiggle
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 7 : LUROY
+NAME     : Line thickness selector
+OWNER    : Roy Lu
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To be able to select the current line thickness, to be applied
+           to subsequent shapes. Example:
+           		select fill style outline 
+           		selects line thickness 1
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select line thickness 9
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two thinly outlined circles and a thinly outlined 
+           	rectangle as well as two thickly outlined rectangles and a thick squiggle
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 8 : LUROY
+NAME     : Implement Poly Line
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 3 Hours
+ISSUE    : Polyline is not yet implemented. Polyline should create points at each
+		   click and connect each new dot to the previous dot if it exists with a line.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 9 : LUROY
+NAME     : Background Fill Selector
+OWNER    : Roy Lu
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To be able to select the current background fill colour
+           		select green fill
+           		select blue fill
+
+           	results in a blue background
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 10 : LAURUSSE
+NAME     : Draw Square
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : Sunday, November 4
+AS A     : user
+I WANT   : To click on one corner of a square, drag, and release to 
+		   specify two corners of a square to be drawn in the current style.
+SO THAT  : I can add squares to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 11 : LUROY
+NAME     : Undo and Redo Functionality
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 4 hours
+AS A     : user
+I WANT   : To be able to undo or redo an action by pressing their respective buttons
+SO THAT  : Any drawing can be reverted back to what it was previously
+			Example:
+           		select fill style outline 
+           		press undo
+           		draw a circle
+           		press undo
+           		press redo
+           		select line thickness 9
+           		draw a rectangle
+           		undo
+           		select line thickness 4
+				draw a rectangle
+			Displays filled circle and a rectangle of thickness 4
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 12 : LIANGC60
+NAME     : Eraser tool
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : 
+AS A     : user
+I WANT   : To select the Eraser tool and remove sections of drawn shapes
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 13 : LUROY
+NAME     : Triangle Shape Tool
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : A triangle to drawn sized according to mouse drag
+SO THAT  : When the mouse is clicked than drag a little, small 
+triangle is drawn for a large drag, a large triangle is drawn.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 14 : LIANGC60
+NAME     : Mouse Corrd Display / Canvas Size Display
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : 
+AS A     : user
+I WANT   : To see the location of the mouse as well as the canvas size
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 15 : LIANGC60
+NAME     : Eye Drop Tool
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : 
+AS A     : user
+I WANT   : To right click Eye Drop Tool then an area on the canvas
+SO THAT  : Color under mouse is selected as the new stroke color
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 16 : LAURUSSE
+NAME     : Polyshape
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : wednesday, November 14
+AS A     : user
+I WANT   : To click random points in the canvas
+SO THAT  : A custom shape can be created
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 1 : LIUYUT11
+NAME     : Icons instead of text for drawing mode selection
+OWNER    : Yuting Liu
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+ISSUE    : Would be nice to have icons instead of "Circle", "Rectangle", ...
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 2 : LIUYUT11
+NAME     : Drawing selection mode not indicated
+OWNER    : Yuting Liu
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+ISSUE    : Currently ,you can't tell which mode "Circle", "Rectangle", ...
+           is currently selected. Is JButton correct, is there a way
+           to highlight the currently selected mode?
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 3 : LIUYUT11
+NAME     : Architecture behind choosing selection mode is poor
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+ISSUE    : Code is not modular and is difficult to expand. Need a better
+           architecture behind selecting a drawing mode, and handling
+           the drawing events. Consider some design patterns here.
+           Refactor ShapeChooserPanel and PaintPanel to get rid of the
+           'if' blocks in the PaintPanel mouse event code.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 4 : LIUYUT11
+NAME     : Architecture behind Model is poor
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+ISSUE    : Having a list of different types of drawable things in the
+           model is cumbersome. In fact, it is currently incorrect, with
+           Squiggle's not drawing properly. Need to re-architect the Model
+           so that it is more flexible, and easier to work with.
+           Consider some design patterns, or change of responsibility
+           here.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 5 : LAURUSSE
+NAME     : Squiggle is broken
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : Sunday, November 4
+ISSUE    : Squiggles are connected to each other by a straight line. Each drag
+		   of the mouse should be a separate squiggle. Possibly
+           the issue is with the representation of the squiggles in the Model.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 6 : LIUYUT11
+NAME     : Circle drawing is broken
+OWNER    : Yuting Liu
+PRIORITY : Sprint 2
+ESTIMATE : Already Completed
+ISSUE    : The first click should specify the center of the circle, with
+           a drag for the radius. This is not the case in the current
+           implementation.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 7 : LIUYUT11
+NAME     : Architecture for drawing shapes can be improved
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+ISSUE    : The architecture can be improved if we implement the Command Design 
+Pattern to draw shapes as follows:
+
+The PaintModel should use the command design pattern. 
+That is, each shape knows how to draw itself, so there is a single list of 
+DrawingCommands maintained by the PaintModel and used by the PaintPanel.
+repaint() simply asks the PaintModel to ask command to execute(g).
+The simplest way to make this happen is to make each shape implement the 
+DrawingCommand interface which requires execute(g) to be implemented.
+Well sort of.
+
+NOTE: The PaintModel does know how to logically draw itself, so does
+know about strokes and pen colors etc. Depending on how much you want
+to split off the logical from the GUI, it may not have to know how to 
+draw on the screen. This is a subtle difference. For example, the
+following logically describes a scene, without actually knowing
+how to draw it on the screen ...
+
+Color = green
+Fill = off
+Border = on
+BorderWidth = 10
+Circle radius 10 at 12,15
+Color = red
+Fill = on
+FillColor = black
+Border = on
+BorderWidth = 7
+Square width 20 at 100,200
+
+If you want to build a more 'logical' PaintModel, you can consider ...
+
+1) Create a mirror hierarchy for Shape, this mirror hirerachy 
+has things like DrawableCircle which has a Circle. The DrawableCircle
+knows how to draw the instance of Circle it holds. Each Shape will
+still need information about its color, and stroke, one way or another.
+
+OR
+
+2) Lookup and apply the Visitor design pattern to the more logical
+PaintModel.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 8 : LIUYUT11
+NAME     : Architecture for handling shape modifiers can be improved 
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+ISSUE    : The architecture can be improved if we implement the Command Design 
+Pattern to handle changes to the graphics context such as changing drawing 
+color, stroke width etc. You can accomplished this by wrapping the changes
+to the graphics context in a DrawingCommand. This way these changes can be
+added to the Bug 2.1 DrawingCommand list. That is, these new types of 
+DrawingCommands appear on PaintPanel's list right along side 
+the Shape type DrawingCommands.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 9 : LIUYUT11
+NAME     : Architecture behind choosing drawing mode is poor
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+ISSUE    : A better architecture behind selecting a drawing mode can be created 
+by implementing the Factory Design Pattern as follows:
+
+The factory design pattern should be used by the paint buttons. 
+The factory is responsible for creating different ShapeManipulatorStrategy 
+instances (see BUG 2.4). That is, when a button is pressed, the appropriate 
+ShapeManipulatorStrategy is created and installed in the PaintPanel. 
+Note that you can associate text with a button, even if you 
+display an ImageIcon. The string attached to the button causes the right choice 
+of object creation.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 10 : LIUYUT11
+NAME     : Architecture behind creating shape instances is poor
+OWNER    : Yuting Liu
+PRIORITY : Sprint 2
+ESTIMATE : 
+ISSUE    : A better architecture for creating shape instances so that it is 
+more flexible, and easier to work with can be created using the Strategy Design 
+pattern as follows:
+
+Create class/abstract class/interface  ShapeManipulatorStrategy as well 
+as subclasses/implementators for each type of Shape. Call these the
+concrete ShapeNamipulatorStrategies
+
+The concrete ShapeManipulatorStrategies are responsible for 
+
+1. Creating instances of Shape and putting them on top of 
+   the PaintModel command stack.
+
+2. Understanding how mouse events modify the shape at the top of the 
+   PaintModel command stack.
+
+3. Calling the PaintPanel repaint at appropriate times.
+
+This strategy can be put in place either by having PaintPanel's mouse 
+events forwarded through PaintPanel into the current strategy, or by 
+simply switching the PaintPanel's event handlers as appropriate.
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 11 : LIANGC60
+NAME     : ColorSelector applies to all shapes
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : Unknown
+ISSUE    :  Instead of each shape having their own color it instead changes 
+the color for all previous shapes as well
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 12 : LAURUSSE
+NAME     : Drawing rectangles and squares only works one way
+OWNER    : Russell Lau
+PRIORITY : 
+ESTIMATE : Sunday, November 4
+ISSUE    : Rectangle and square only draws from top left to the bottom right.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 13 : LIUYUT11
+NAME     : Rename Files
+OWNER    : Yuting Liu
+PRIORITY : LOW
+ESTIMATE : <1 Hour
+ISSUE    : Change the file names to be easier to differentiate between shapes
+and gathering files
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 14 : LUROY
+NAME     : Fix renaming files
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 10 minutes
+ISSUE    : Some functionality broke due to renaming errors
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 15 : LUROY
+NAME     : Polyline Optimizations and Improvements along with Squiggle
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 1 day
+ISSUE    : Polyline runs very slowly. Code needs to be optimized. Possibly
+rethink implementation to not use built in polyline. Could have some better
+functionality like starting new polylines. Squiggle depends on polyline so it
+is equally slow. Squiggle will need another implementation.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 16 : LAURUSSE
+NAME     : Square drag is wrong
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : Thursday, November 8
+ISSUE    : The square's length/width is determine by mouse location but does not take the large of the x or y values but instead the smaller. Square drag should be similar to the paint version.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 17 : LAURUSSE
+NAME     : Squiggle implementation could be improved
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : Friday, November 9
+ISSUE    : Squiggles are currently always connected as oppose to separated
+when the mouse is released, it would be nice if a new squiggle was made
+every click and drag. Additionally, squiggles are made up of many small
+lines but each line is drawn independently and has no relation to 
+each other. Consequently, there's no way to group all the lines for a 
+single squiggle which will cause problems when trying to undo or redo. 
+Squiggles lines could possibly be made in another class to group them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 18 : LUROY
+NAME     : Property changing settings could be unified more and convenient
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : Friday, November 9
+ISSUE    : Currently some shape property changing settings like stroke weight are
+not all implemented in the same class. It would be better to implement them all in
+the same panel to make it easier to add more settings later on. Additionally,
+the current setup isn't the most convenient for example: superfluous menus,
+no color panel for background fill, and unorganized/unclear menu locations.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 19 : LUROY
+NAME     : Canvas and layout functionality could be improved
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : Friday, November 9
+ISSUE    : When the drawing window is changed in size from the default, the
+canvas space does not also change. Additionally when the screen size is increased
+some buttons are hard to access.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 20 : LUROY
+NAME     : Refactor how shape properties are being applied to shapes
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : Friday, November 9
+ISSUE    : Currently shape properties go through many methods across classes
+to get applied to a shape. Shapes themselves should know what properties they
+should draw with as oppose to in the paint panel.
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 21 : LIANGC60
+NAME     : The Shape Fill Toggle value does not stay after choosing new shape
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : Friday, November 9
+ISSUE    : Shape fill works fine until new shape is chosen. is this really a 
+bug though?
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 22 : LIUYUT11
+NAME     : Shape Properties not functioning correctly after draw command refactor
+OWNER    : Yuting Liu
+PRIORITY : Sprint 2
+ESTIMATE : 2 hours
+ISSUE    : Rearchitecture of code meant shape properties are no longer working as
+intended.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 23 : LUROY
+NAME     : Canvas defaults to fullscreen
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 2 hours
+ISSUE    : Currently canvas defaults to fullscreen when opened which can be
+inconvenient. Canvas should start at a small size and have to ability to resize
+from there
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 24 : LUROY
+NAME     : Current DrawCommands being undone
+OWNER    : roy lu
+PRIORITY : Sprint 2
+ESTIMATE : 2 hours
+ISSUE    : Shape modifiers settings are also undone when undo is used. Draw
+should know to reset modifiers back to their current settings once an undo occurs.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 25 : LUROY
+NAME     : StrokeWeight not implemented in new design pattern
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 10 minutes
+ISSUE    : DrawWeight class not yet implemented. Slider should change line thickness
+as expected.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 26 : Laurusse
+NAME     : Better icons
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : Tuesday, November 13
+ISSUE    : Icons have white backgrounds, would look nicer if buttons just had the icon.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 30 : LUROY
+NAME     : Re-implement Color Picker
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 1 Day
+ISSUE    : Choosing colors currently utilizes the JavaFx Color Picker
+built-in. This should no be the case. Need to implement a custom
+color picker instead.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 31 : LIANGC60
+NAME     : Deleting unneccessary code
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : Tuesday, November 13
+ISSUE    : Doesn't look good. Removing for clarity
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 32 : LUROY
+NAME     : New Color Picker Bugs
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 20 minutes
+ISSUE    : Color Picker red text stuck at zero and opacity disfunctional.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 33 : LUROY
+NAME     : Stroke and Fill Color Properties
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 4 hours
+ISSUE    : Stroke and Fill color's for shapes should be independently
+editable. Currently, they can both be only set with the same color.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 34 : LAURUSSE
+NAME     : Clean up everything
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : 2 hours
+ISSUE    : There are many unused variables in the code. Also java docs are missing for a few of the files.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 35 : LUROY
+NAME     : Refactor how shape property commands are added to the model
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 4 hours
+ISSUE    : Property panels should know how to send commands directly to
+model themselves. Currently they rely on Paint Panel.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 36 : LUROY
+NAME     : Reimplement Fill Toggle
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 1 hour
+ISSUE    : After recent implementations, fill no longer functions as a toggle.
+Re-implement it to work with new code.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 37 : LIANGC60
+NAME     : EyeDrop X,Y Values not correct with Mouse X,Y Values
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : 20 min
+ISSUE    : Before, Eyedrop would not select the correct color due to the X,Y 
+	Coordinates being off from what the mouse X,Y coords were.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 38 : LIANGC60
+NAME     : JavaDocs Incomplete
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : 2 hour
+ISSUE    : Code has little to none JavaDocs, will add for efficeincy +
+		easier to read + understand.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 39 : LIANGC60
+NAME     : Fill only changes Stroke Color
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : 20 min
+ISSUE    : Will edit so there's two separate eyedrops one for stroke and 
+		one for fill
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 40 : LUROY
+NAME     : Fill eyedrop doesn't follow fill checkbox
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 20 min
+ISSUE    : Choosing a fill via eyedrop adds fill to shape even when
+fill checkbox is unchecked.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 41 : LUROY
+NAME     : Overall layout and design could be improved
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 2 hours
+ISSUE    : Current visuals could look more cohesive and
+professional.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 42 : LUROY
+NAME     : Further code cleanup and javadocs
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 1 hour
+ISSUE    : Still have leftover code and missing docs that need to be added
+professional.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 43 : LAURUSSE
+NAME     : Right click to create another polyshape
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : 10 minutes
+ISSUE    : Right click should mean that the user wishes to create a new polyshape
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 44 : LUROY
+NAME     : Button feedback with redesign
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 20 minutes
+ISSUE    : Button feedback lost with redesign. Need to find a way to give
+some sort of feedback when chosen.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 45 : LIANGC60
+NAME     : Removed unnecessary print statement
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : 2 min
+ISSUE    : Unneccessary code
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 46 : LUROY
+NAME     : Remove guide and check for bugs
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 1 hour
+ISSUE    : Bugs with guide, just omit it
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 47 : LUROY
+NAME     : Circle button startup feedback
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 10 minutes
+ISSUE    : Circle is not shown as selected when program starts
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 48 : LIUYUT11
+NAME     : Polyshape interactions with undo not working correctly
+OWNER    : Yuting Liu
+PRIORITY : Sprint 2
+ESTIMATE : 10 minutes
+ISSUE    : Must undo the amount of points in the polyshape to delete the entire thing in one go. Should only need one undo to undo the entier polyshape
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 49 : LUROY
+NAME     : Polyshape Fill
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 10 minutes
+ISSUE    : Polyshape is unaffected by fill settings and always stays transparent. It should
+have a fill.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 50 : LUROY
+NAME     : Polyshape Undo
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 10 minutes
+ISSUE    : When undo is used on polyshape, clicking anywhere on the canvas will make it reappear.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+# OMITTED USER STORIES/BUGS BELOW   ###########################################
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 12 : LAURUSSE
+NAME     : Add in right click to remove for circles, rectangles, square and squiggles.
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : Sunday, November 4
+AS A     : user
+I WANT   : To right click to remove what was being drawn
+SO THAT  : What was currently being drawn is deleted
+OMITTED
+DUE TO   : Being redundant with undo and redo. No clear way to implement in the time given.
+--------------------------------------------------------------------------

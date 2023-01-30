@@ -1,0 +1,355 @@
+# Copy User Stories from the ProductBacklog 
+# to the appropriate Sprint below, after the 
+# Sprint Planning Meeting.
+
+# Sprint 1 Dec 28, 2018
+# Sprint 1 Backlog UserStories go below
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 1 : LAURUSSE
+NAME     : Draw Circle
+OWNER    : Russell Lau
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To click the center of the circle, drag, and release to specify
+           a circle to be drawn in the current style.
+SO THAT  : I can add circles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 2 : LAURUSSE
+NAME     : Draw Circle Feedback
+OWNER    : Russell Lau
+PRIORITY : Sprint 1
+ESTIMATE :  Friday, November 2
+AS A     : user
+I WANT   : As a user is specifying a Circle, during the drag, a 'current'
+           circle should be on display. As the user drags, the 'current'
+           circle changes in real time so that a circle is drawn with
+           centre at users initial circle click, with radius out to
+           the current dragged mouse position.
+SO THAT  : I can see the circle I am about to build on release of the mouse
+           button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 3 : LAURUSSE
+NAME     : Draw Rectangle
+OWNER    : Russell Lau
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To click on one corner of a rectangle, drag, and release to 
+		   specify two corners of a rectangle to be drawn in the current style.
+SO THAT  : I can add rectangles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 4 : LAURUSSE
+NAME     : Draw Rectangle Feedback
+OWNER    : Russell Lau
+PRIORITY :Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
+SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 7 : LUROY
+NAME     : Line thickness selector
+OWNER    : Roy Lu
+PRIORITY : Sprint 1 - Priority #7
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To be able to select the current line thickness, to be applied
+           to subsequent shapes. Example:
+           		select fill style outline 
+           		selects line thickness 1
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select line thickness 9
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two thinly outlined circles and a thinly outlined 
+           	rectangle as well as two thickly outlined rectangles and a thick squiggle
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 8 : LUROY
+NAME     : Implement Poly Line
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 3 Hours
+ISSUE    : Polyline is not yet implemented. Polyline should create points at each
+		   click and connect each new dot to the previous dot if it exists with a line.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 9 : LUROY
+NAME     : Background Fill Selector
+OWNER    : Roy Lu
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To be able to select the current background fill colour
+           		select green fill
+           		select blue fill
+
+           	results in a blue background
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 1 : LIUYUT11
+NAME     : Icons instead of text for drawing mode selection
+OWNER    : Yuting Liu
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+ISSUE    : Would be nice to have icons instead of "Circle", "Rectangle", ...
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 2 : LIUYUT11
+NAME     : Drawing selection mode not indicated
+OWNER    : Yuting Liu
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+ISSUE    : Currently ,you can't tell which mode "Circle", "Rectangle", ...
+           is currently selected. Is JButton correct, is there a way
+           to highlight the currently selected mode?
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 3 : LIUYUT11
+NAME     : Architecture behind choosing selection mode is poor
+OWNER    : Yuting Liu
+PRIORITY : Sprint 2
+ESTIMATE : 
+ISSUE    : Code is not modular and is difficult to expand. Need a better
+           architecture behind selecting a drawing mode, and handling
+           the drawing events. Consider some design patterns here.
+           Refactor ShapeChooserPanel and PaintPanel to get rid of the
+           'if' blocks in the PaintPanel mouse event code.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 4 : LIUYUT11
+NAME     : Architecture behind Model is poor
+OWNER    : Yuting Liu
+PRIORITY : Sprint 2
+ESTIMATE : 
+ISSUE    : Having a list of different types of drawable things in the
+           model is cumbersome. In fact, it is currently incorrect, with
+           Squiggle's not drawing properly. Need to re-architect the Model
+           so that it is more flexible, and easier to work with.
+           Consider some design patterns, or change of responsibility
+           here.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 6 : LIUYUT11
+NAME     : Circle drawing is broken
+OWNER    : Yuting Liu
+PRIORITY : Sprint 2
+ESTIMATE : Already Completed
+ISSUE    : The first click should specify the center of the circle, with
+           a drag for the radius. This is not the case in the current
+           implementation.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 5 : LIANGC60
+NAME     : Color selector
+OWNER    : Coco Liang
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To be able to select the current drawing color, to be applied
+           to subsequent shapes. Example: 
+           		selects color red 
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select color green
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two red circles and a red rectangle as well as
+           	two green rectangles and a green squiggle
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 6 : LIANGC60
+NAME     : Fill style selector
+OWNER    : Coco Liang
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To be able to select the current drawing style (filled or outline), to be applied
+           to subsequent shapes. Example: 
+           		selects fill style solid
+           		mode circle
+           		draw a circle
+           		draw a circle
+           		mode rectangle
+           		draw a rectangle
+           		select fill style outline
+           		draw a rectangle
+           		draw a rectangle
+           		select mode squiggle
+           		draw a squiggle
+           	results in two solid circles and a solid rectangle as well as
+           	two outlined rectangles and a squiggle
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 11 : LIANGC60
+NAME     : ColorSelector applies to all shapes
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+ISSUE    :  Instead of each shape having their own color it instead changes 
+the color for all previous shapes as well
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 1 : LAURUSSE
+NAME     : Draw Circle
+OWNER    : Russell Lau
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To click the center of the circle, drag, and release to specify
+           a circle to be drawn in the current style.
+SO THAT  : I can add circles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 2 : LAURUSSE
+NAME     : Draw Circle Feedback
+OWNER    : Russell Lau
+PRIORITY : Sprint 1
+ESTIMATE :  Friday, November 2
+AS A     : user
+I WANT   : As a user is specifying a Circle, during the drag, a 'current'
+           circle should be on display. As the user drags, the 'current'
+           circle changes in real time so that a circle is drawn with
+           centre at users initial circle click, with radius out to
+           the current dragged mouse position.
+SO THAT  : I can see the circle I am about to build on release of the mouse
+           button.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 3 : LAURUSSE
+NAME     : Draw Rectangle
+OWNER    : Russell Lau
+PRIORITY : Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : To click on one corner of a rectangle, drag, and release to 
+		   specify two corners of a rectangle to be drawn in the current style.
+SO THAT  : I can add rectangles to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 4 : LAURUSSE
+NAME     : Draw Rectangle Feedback
+OWNER    : Russell Lau
+PRIORITY :Sprint 1
+ESTIMATE : Friday, November 2
+AS A     : user
+I WANT   : Similarly to Draw Circle Feedback, display the rectangle in mid construction.
+SO THAT  : I can see the rectangle I am about to build on release of the mouse button.
+--------------------------------------------------------------------------
+# Sprint 2 Nov 3, 2018
+# Sprint 2 Backlog UserStories go below
+--------------------------------------------------------------------------
+TYPE     : USER STORY 8 : LUROY
+NAME     : Implement Poly Line
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 3 Hours
+ISSUE    : Polyline is not yet implemented. Polyline should create points at each
+		   click and connect each new dot to the previous dot if it exists with a line.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 10 : LAURUSSE
+NAME     : Draw Square
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : Sunday, November 4
+AS A     : user
+I WANT   : To click on one corner of a square, drag, and release to 
+		   specify two corners of a square to be drawn in the current style.
+SO THAT  : I can add squares to my canvas
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 11 : LUROY
+NAME     : Undo and Redo Functionality
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 4 hours
+AS A     : user
+I WANT   : To be able to undo or redo an action by pressing their respective buttons
+SO THAT  : Any drawing can be reverted back to what it was previously
+			Example:
+           		select fill style outline 
+           		press undo
+           		draw a circle
+           		press undo
+           		press redo
+           		select line thickness 9
+           		draw a rectangle
+           		undo
+           		select line thickness 4
+				draw a rectangle
+			Displays filled circle and a rectangle of thickness 4
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 12 : LIANGC60
+NAME     : Eraser tool
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : 
+AS A     : user
+I WANT   : To select the Eraser tool and remove sections of drawn shapes
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 13 : LUROY
+NAME     : Triangle Shape Tool
+OWNER    : Roy Lu
+PRIORITY : Sprint 2
+ESTIMATE : 2 hours
+AS A     : user
+I WANT   : A triangle to drawn sized according to mouse drag
+SO THAT  : When the mouse is clicked than drag a little, small 
+triangle is drawn for a large drag, a large triangle is drawn.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 14 : LIANGC60
+NAME     : Mouse Corrd Display / Canvas Size Display
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : 
+AS A     : user
+I WANT   : To see the location of the mouse as well as the canvas size
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 15 : LIANGC60
+NAME     : Eye Drop Tool
+OWNER    : Coco Liang
+PRIORITY : Sprint 2
+ESTIMATE : 
+AS A     : user
+I WANT   : To right click Eye Drop Tool then an area on the canvas
+SO THAT  : Color under mouse is selected as the new stroke color
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 16 : LAURUSSE
+NAME     : Polyshape
+OWNER    : Russell Lau
+PRIORITY : Sprint 2
+ESTIMATE : wednesday, November 14
+AS A     : user
+I WANT   : To click random points in the canvas
+SO THAT  : A custom shape can be created
+--------------------------------------------------------------------------

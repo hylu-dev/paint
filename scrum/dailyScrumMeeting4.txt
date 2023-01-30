@@ -1,0 +1,96 @@
+# Fill in, commit and push each day.
+# Group Member: Roy Lu
+Oct 28, 2018
+	Yesterday : N/A
+	Today     : N/A
+	Obstacles : N/A
+
+Oct 29, 2018
+	Yesterday : N/A
+	Today     : N/A
+	Obstacles : N/A
+
+Oct 30, 2018
+	Yesterday : N/A
+	Today     : Had first meeting and filled information and delegated user stories/bugs
+	Obstacles : N/A
+
+Oct 31, 2018
+	Yesterday : Got working thickness selector for UserStory7
+	Today     : Will try to fix bugs with thickness selector
+	Obstacles : Thickness selector does not make different thicknesses for each line
+
+Nov 1, 2018
+	Yesterday : Worked on other assignments, didn't get to fixing thickness selector
+	Today     : Work on thickness selector today and possibly improve some of the architecture
+	Obstacles : Thickness selector does not make different thicknesses for each line
+
+Nov 2, 2018
+	Yesterday : Fixed thickness selector after recent refactor. Completed new background fill user story
+	Today     : Studied other courses
+	Obstacles : Have other commitments, see if can fit some more work in.
+
+Nov 3, 2018
+	Yesterday : Studied other courses
+	Today     : Take a look at refactoring bugs
+	Obstacles : Still need to study for upcoming tests
+
+Nov 4, 2018
+	Yesterday : Finished UserStory8
+	Today     : Take a look at other possible user stories/bugs
+	Obstacles : Need to study for test
+
+Nov 5, 2018
+	Yesterday : Busy studying didn't work on assignment
+	Today     : Need to fix eclipse as it won't open
+	Obstacles : Broken eclipse
+
+Nov 6, 2018
+	Yesterday : Went to Furkan to fix repo problems that didn't allow me to push pull or open eclipse
+	Today     : Plan to work on improving polyline implementation and other bugs
+	Obstacles :  Stats test happening today, may be preoccupied
+
+Nov 7, 2018
+	Yesterday : Fixed polyline and squiggle implementatinn
+	Today     : Work on reworking shape property classes
+	Obstacles : Study for upcoming mid term.
+
+Nov 8, 2018
+	Yesterday : Unified shape property classes
+	Today     : Fix canvas resizing and look at shape properties are being handled
+	Obstacles : Mid term today
+
+Nov 9, 2018
+	Yesterday : Shapes now know how to apply properties instead of depending on paint panel
+	Today     : Study for other courses and look at undo functionality
+	Obstacles : Upcoming deadlines for other courses
+
+Nov 10, 2018
+	Yesterday : Studied for other courses
+	Today     : Work on Undo and Redo functionality 
+	Obstacles : Meeting with family
+	
+Nov 11, 2018
+	Yesterday : Finished Undo and Redo Functionality
+	Today     : Look at other possible UserStory additions
+	Obstacles : Studying for other courses
+	
+Nov 12, 2018
+	Yesterday : Added Triangle Shape
+	Today     : Work on improving eraser and possibly colour picker
+	Obstacles : No obstacles today
+
+Nov 13, 2018
+	Yesterday : Improved Eraser and Undo/Redo implementation
+	Today     : Work on color picker
+	Obstacles : Studying for upcoming mid-term
+
+Nov 14, 2018
+	Yesterday : Small refactoring and bug fixing
+	Today     : Finish color picker
+	Obstacles : Test Today
+	
+Nov 15, 2018
+	Yesterday : Finished new color picker
+	Today     : Redesign visuals and squash bugs
+	Obstacles : Long day of classes

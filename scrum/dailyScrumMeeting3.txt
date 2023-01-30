@@ -1,0 +1,96 @@
+# Fill in, commit and push each day.
+# Group Member: Russell Lau
+Oct 28, 2018
+	Yesterday : n/a
+	Today     : n/a
+	Obstacles : n/a
+
+Oct 29, 2018
+	Yesterday : n/a
+	Today     : n/a
+	Obstacles : n/a
+
+Oct 30, 2018
+	Yesterday : n/a
+	Today     : Delegations of user stories and bugs.
+	Obstacles : none
+
+Oct 31, 2018
+	Yesterday : Delegations of user story 1-4
+	Today     : Trying to get user story 3 to work.
+	Obstacles : Keeps getting null pointer error when trying to get first x and y value of point.
+
+Nov 1, 2018
+	Yesterday : Got a group member to help figure out a problem with rectangle. Most of rectangle is done now.
+	Today     : Finished some parts of rectangle. Still need to figure out how to create rectangles from other directions instead of top right to bottom left.
+	Obstacles : Sheridan College in Oakville is a long transit from home. Major headache. 
+
+Nov 2, 2018
+	Yesterday : Fixed up rectangle a bit.
+	Today     : Finished user stories 2 and 4.
+	Obstacles : Migraine. Refactoring messed up everything.
+
+Nov 3, 2018
+	Yesterday : Finished user stories 2 and 4.
+	Today     : Finished implementing cube draw. trying to make both cube and rectangle able to draw from other directions
+	Obstacles : Rectangle kept on jittering when moving it. Apparently most of the work I did was saved into masters even though I was in a branch.
+
+Nov 4, 2018
+	Yesterday : Finish drawing cubes. Tried to add more functionality to rectangles and squares.
+	Today     : Finish the functionality of rectangles and squares. Fixed squiggle. 
+	Obstacles : Squiggles is lagging due to amount of points and lines it generates. Added new bug in productBacklog and will fix.
+
+Nov 5, 2018
+	Yesterday : Finished the bug in rectangle and squiggles. Lags in squiggles.
+	Today     : Working on design assignment from CCT.
+	Obstacles : N/A
+
+Nov 6, 2018
+	Yesterday : Worked on other assignments.
+	Today     : Late sprint 2 meeting. recap over what has been finished. Busy today also due to cct assignment.
+	Obstacles : N/A
+
+Nov 7, 2018
+	Yesterday : Sprint 2 meetup
+	Today     : Worked on CCT. briefly working on squiggle and square.
+	Obstacles : None, not much was done due to CCT.
+
+Nov 8, 2018
+	Yesterday : Worked on squiggle and square briefly
+	Today     : Working on getting square to work porperly. doing all nighter due to time constraints form other assignments.
+	Obstacles : It works but takes alot of if statements. will see if i can improve it.
+
+Nov 9, 2018
+	Yesterday : Worked on square.
+	Today     : Finished work on square. Worked on CCT unity project.
+	Obstacles : Sleep. Square still has alot of if statements.
+
+Nov 10, 2018
+	Yesterday : Finished square.
+	Today     : Nothing, have to study for CCIT test on monday.
+	Obstacles : N/A
+	
+Nov 11, 2018
+	Yesterday : CCIT studying.
+	Today     : Nothing, I have to attend a birthday party for my great grandma.
+	Obstacles : N/A
+	
+Nov 12, 2018
+	Yesterday : Studied for CCIT test. Celebrated my Great Grandma's 101th birthday.
+	Today     : Quality of life change to triangle. Fixed square so it works like how it does in paint. Found how to easily make right angled triangles.
+	Obstacles : None.
+
+Nov 13, 2018
+	Yesterday : QOL changes to triangle and made square more like paint.
+	Today     : Worked on making the icons look better.
+	Obstacles : Smoke emergency due to burnt food by my Grandpa.
+
+Nov 14, 2018
+	Yesterday : Finished making icons look better.
+	Today     : Fixed up squiggle and its problem with undo. Roy Lu helped. Added the outlines for javadocs and filled in the javadocs for the ones I created.
+	Obstacles : How to not make it lag.
+	
+Nov 15, 2018
+	Yesterday : Fixed up squiggle and did the javadoc outlines for all files
+	Today     : Finished polyshape
+	Obstacles : how to make the arraylist of points into doubles[]
