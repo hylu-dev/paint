@@ -14,7 +14,7 @@ The compiled project is accessible at https://github.com/hylu-dev/paint/blob/mai
 
 This is a team project consisting of me and three other members. My role in the project was programming a number of tools, UI design, and some architecture contributions. I've included this project to demonstrate proficiency in OOP using the Java language.
 
-As this codebase has multiple contributors, there will be inline comments indicating the work that I've done as well as the below highlights pointing to work I've done (unless otherwise stated).
+As this codebase has multiple contributors, there will be function comments indicating the work that I've done as well as the below highlights pointing to code I've written (unless otherwise stated).
 
 ### Code Highlights
 
@@ -53,6 +53,7 @@ The project was created using the Eclipse IDE. All scripts are found within src/
 
 - **paint/PaintModel.java** (Me and other contributers**)
   - Manages all commands made to the program
+  - Some function overloading can be seen when adding/removing commands
 - **paint/Paint.java** (Me and other contributers**)
   - Launches the program 
 - **paint/View.java** (Me and other contributers**)
