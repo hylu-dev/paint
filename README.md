@@ -57,4 +57,4 @@ The project was created using the Eclipse IDE. All Relevant scripts are found wi
 - **paint/Paint.java** (Me and other contributers**)
   - Launches the program 
 - **paint/View.java** (Me and other contributers**)
-  - Displays all the visual components (paint/panels/
+  - Displays all the visual components (paint/Panels/)
