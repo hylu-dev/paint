@@ -2,7 +2,7 @@ package ca.utoronto.utm.paint;
 
 /**
  * A strategy for erasing on onto a graphics context
- *
+ * @author Roy Lu
  */
 public class ReadErase implements ReadInterface {
     private PaintModel model;
@@ -11,7 +11,7 @@ public class ReadErase implements ReadInterface {
     
     /**
      * A constructor for an eraser strategy
-     * 
+     * @author Roy Lu
      * @param p a model to obtain add an erasing command
      */
     public ReadErase(PaintModel p) {
@@ -20,7 +20,7 @@ public class ReadErase implements ReadInterface {
    
     /**
      * creates a new erasing command on click
-     * 
+     * @author Roy Lu
      */
 	@Override
 	public void mousePressed(Point p) {
@@ -34,7 +34,7 @@ public class ReadErase implements ReadInterface {
 
 	/**
 	 * when moving the mouse, a guide to show the erasing size
-	 * 
+	 * @author Roy Lu
 	 */
 	@Override
 	public void mouseMoved(Point p) {
@@ -42,7 +42,7 @@ public class ReadErase implements ReadInterface {
 
 	/**
 	 * Keep erasing as long as the mouse is dragged
-	 * 
+	 * @author Roy Lu
 	 */
 	@Override
 	public void mouseDragged(Point p) {

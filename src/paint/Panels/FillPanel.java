@@ -17,7 +17,7 @@ import javafx.scene.text.Text;
 /**
  * 
  * A color selector panel that changes shape fills to the selected color
- *
+ * @author Roy Lu
  */
 public class FillPanel extends GridPane implements EventHandler<ActionEvent> {
 
@@ -38,7 +38,7 @@ public class FillPanel extends GridPane implements EventHandler<ActionEvent> {
 	
 	/**
 	 * Constructor for a fill panel
-	 * 
+	 * @author Roy Lu
 	 * @param view a view for the panel to set a fill
 	 */
 	public FillPanel(View view) {
@@ -108,7 +108,7 @@ public class FillPanel extends GridPane implements EventHandler<ActionEvent> {
 	
 	/**
 	 * Gets the current set color
-	 * 
+	 * @author Roy Lu
 	 * @return a new color with the current rgb opacity settings
 	 */
 	public Color getValue() {
@@ -117,7 +117,7 @@ public class FillPanel extends GridPane implements EventHandler<ActionEvent> {
 	
 	/**
 	 * Choose whether to show fill color
-	 * 
+	 * @author Roy Lu
 	 * @param filled if true
 	 */
 	public void isFill(Boolean filled) {

@@ -7,7 +7,7 @@ import javafx.scene.canvas.Canvas;
 
 /**
  * A canvas that resizes itself
- * 
+ * @author Roy Lu
  *
  */
 public class ResizableCanvas extends Canvas {
@@ -17,7 +17,7 @@ public class ResizableCanvas extends Canvas {
 	
 	/**
 	 * Constructor for resizable canvas up to the given dimensions
-	 * 
+	 * @author Roy Lu
 	 * @param width to be able to resize to
 	 * @param height to be able to resize to
 	 */

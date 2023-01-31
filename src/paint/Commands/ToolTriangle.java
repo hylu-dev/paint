@@ -4,7 +4,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 /**
  * A command for drawing triangle
- *
+ * @author Roy Lu
  */
 public class ToolTriangle implements ToolCommand{
 	
@@ -14,14 +14,14 @@ public class ToolTriangle implements ToolCommand{
 
 	/**
 	 * Constructor for a triangle command
-	 * 
+	 * @author Roy Lu
 	 */
 	public ToolTriangle() {
 	}
 	
 	/**
 	 * Constructor for a triangle command with set points
-	 * 
+	 * @author Roy Lu
 	 * @param p1 first point of the triangle
 	 * @param p2 second point of the triangle
 	 * @param p3 third point of the triangle
@@ -34,7 +34,7 @@ public class ToolTriangle implements ToolCommand{
 	
 	/**
 	 * getter for the first point
-	 * 
+	 * @author Roy Lu
 	 * @return first point
 	 */
 	public Point getPoint1() {
@@ -43,7 +43,7 @@ public class ToolTriangle implements ToolCommand{
 	
 	/**
 	 * getter for the second point
-	 * 
+	 * @author Roy Lu
 	 * @return second point
 	 */
 	public Point getPoint2() {
@@ -52,7 +52,7 @@ public class ToolTriangle implements ToolCommand{
 	
 	/**
 	 * getter for the third point
-	 * 
+	 * @author Roy Lu
 	 * @return third point
 	 */
 	public Point getPoint3() {
@@ -61,7 +61,7 @@ public class ToolTriangle implements ToolCommand{
 	
 	/**
 	 * setter for the first point
-	 * 
+	 * @author Roy Lu
 	 * @param p point to set
 	 */
 	public void setPoint1(Point p) {
@@ -70,7 +70,7 @@ public class ToolTriangle implements ToolCommand{
 	
 	/**
 	 * setter for the second point
-	 * 
+	 * @author Roy Lu
 	 * @param p point to set
 	 */
 	public void setPoint2(Point p) {
@@ -79,7 +79,7 @@ public class ToolTriangle implements ToolCommand{
 	
 	/**
 	 * setter for the third point
-	 * 
+	 * @author Roy Lu
 	 * @param p point to set
 	 */
 	public void setPoint3(Point p) {
@@ -88,7 +88,7 @@ public class ToolTriangle implements ToolCommand{
 	
 	/**
 	 * draws a triangle onto graphics context
-	 * 
+	 * @author Roy Lu
 	 */
 	@Override
 	public void draw(GraphicsContext g) {

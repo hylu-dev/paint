@@ -8,7 +8,8 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 
 /**
- *
+ * A panel for undoing and redoing commands sent to the canvas
+ * @author Roy Lu
  */
 public class UndoPanel extends GridPane implements EventHandler<ActionEvent> {
 
@@ -18,7 +19,7 @@ public class UndoPanel extends GridPane implements EventHandler<ActionEvent> {
 
 	/**
 	 * Panel that holds buttons for undoing commands from a model
-	 * 
+	 * @author Roy Lu
 	 * @param view to access model to undo
 	 */
 	public UndoPanel(View view) {
@@ -36,7 +37,7 @@ public class UndoPanel extends GridPane implements EventHandler<ActionEvent> {
 
 	/**
 	 * Undo's a command when undo is pressed and redo's a command when redo is pressed
-	 * 
+	 * @author Roy Lu
 	 */
 	@Override
 	public void handle(ActionEvent event) {

@@ -5,7 +5,7 @@ import javafx.stage.Stage;
 
 /**
  * An initializer that launches a paint program
- *
+ * @author Roy Lu, Yuting Liu, Coco Liang, Russell Lau
  */
 public class Paint extends Application {
 

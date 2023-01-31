@@ -5,7 +5,7 @@ import java.util.Observable;
 
 /**
  * A model that holds all commands to a paint program send them to be drawn when needed
- * 
+ * @author Roy Lu, Yuting Liu, Coco Liang, Russell Lau
  *
  */
 public class PaintModel extends Observable {
@@ -34,7 +34,7 @@ public class PaintModel extends Observable {
 	
 	/**
 	 * Adds a command to a specified index in the command ArrayList
-	 * 
+	 * @author Roy Lu
 	 * @param s a command to be added
 	 * @param index the location to add the command
 	 */
@@ -46,7 +46,7 @@ public class PaintModel extends Observable {
 	
 	/**
 	 * Removes a command from the commands ArrayList
-	 * 
+	 *
 	 */
 	public void removeCommand() {
 		this.commands.remove(this.commands.size() - 1);
@@ -56,7 +56,7 @@ public class PaintModel extends Observable {
 	
 	/**
 	 *  Removes a command from a specified index in the commands ArrayList
-	 * 
+	 *  @author Roy Lu
 	 * @param index the location to remove the command
 	 */
 	public void removeCommand(int index) {

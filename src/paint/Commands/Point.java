@@ -3,7 +3,7 @@ package ca.utoronto.utm.paint;
 /**
  * 
  * Is a point that consist of an X and Y location
- *
+ * @author Roy Lu
  */
 public class Point {
 	int x, y;
@@ -13,6 +13,7 @@ public class Point {
 	
 	/**
 	 * Constructor for Point
+	 * @author Roy Lu
 	 * @param x The horizontal position
 	 * @param y The vertical position
 	 */
@@ -23,6 +24,7 @@ public class Point {
 
 	/**
 	 * Outputs the X value of the point
+	 * @author Roy Lu
 	 * @return Return the X value
 	 */
 	public int getX() {
@@ -31,6 +33,7 @@ public class Point {
 
 	/**
 	 * Sets a X value to the point
+	 * @author Roy Lu
 	 * @param x The value to be set as the new horizontal value
 	 */
 	public void setX(int x) {
@@ -39,6 +42,7 @@ public class Point {
 
 	/**
 	 * Outputs the Y value of the point
+	 * @author Roy Lu
 	 * @return Return the Y value
 	 */
 	public int getY() {
@@ -47,6 +51,7 @@ public class Point {
 
 	/**
 	 * Sets a Y value to the point
+	 * @author Roy Lu
 	 * @param x The value to be set as the new vertical value
 	 */
 	public void setY(int y) {

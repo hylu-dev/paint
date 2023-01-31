@@ -3,7 +3,7 @@ package ca.utoronto.utm.paint;
 /**
  * 
  * Allows a polyline to be drawn according to mouse inputs
- *
+ * @author Roy Lu
  */
 public class ReadPolyLine implements ReadInterface {
 	
@@ -13,7 +13,7 @@ public class ReadPolyLine implements ReadInterface {
 	/**
 	 * 
 	 * Constructor for a polyline
-	 * 
+	 * @author Roy Lu
 	 * @param polyline a polyline to be used
 	 * @param model takes the polyline to be drawn
 	 */
@@ -23,7 +23,7 @@ public class ReadPolyLine implements ReadInterface {
 	
 	/**
 	 * When the mouse is pressed a new a point into the polyline
-	 * 
+	 * @author Roy Lu
 	 */
 	@Override
 	public void mousePressed(Point p) {
@@ -38,7 +38,7 @@ public class ReadPolyLine implements ReadInterface {
 
 	/**
 	 * Give feedback on next line segment when dragging
-	 * 
+	 * @author Roy Lu
 	 */
 	@Override
 	public void mouseDragged(Point p) {
@@ -53,7 +53,7 @@ public class ReadPolyLine implements ReadInterface {
 	
 	/**
 	 * Give feedback on next line segment when moving
-	 * 
+	 * @author Roy Lu
 	 */
 	@Override
 	public void mouseMoved(Point p) {
@@ -68,7 +68,7 @@ public class ReadPolyLine implements ReadInterface {
 
 	/**
 	 * Cancels adding new segments to the current polyline separates from next added point
-	 * 
+	 * @author Roy Lu
 	 */
 	@Override
 	public void mouseRight() {

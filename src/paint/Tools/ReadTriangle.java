@@ -1,8 +1,8 @@
 package ca.utoronto.utm.paint;
 
 /**
- * Reads and creates a circle from mouse events
- * 
+ * Reads and creates a Triangle from mouse events
+ * @author Roy Lu
  *
  */
 public class ReadTriangle implements ReadInterface{
@@ -17,7 +17,7 @@ public class ReadTriangle implements ReadInterface{
 	
 	/**
 	 * Constructor for creating a triangle
-	 * 
+	 * @author Roy Lu
 	 * @param p The PaintModel that will take the triangle object
 	 */
 	public ReadTriangle(PaintModel p) {
@@ -25,7 +25,8 @@ public class ReadTriangle implements ReadInterface{
 	}
 	
 	/**
-	 * Takes the point at which the circle is centred
+	 * Takes the starting point of the triangle
+	 * @author Roy Lu
 	 */
 	@Override
 	public void mousePressed(Point p) {
@@ -37,15 +38,13 @@ public class ReadTriangle implements ReadInterface{
 		model.addCommand(this.triangle);
 	}
 	
-	/**
-	 * Takes the point at which the circle's edge should be, and creates the circle
-	 */
 	@Override
 	public void mouseReleased(Point p) {
 	}
 	
 	/**
 	 * Gives visual feedback of triangle drawing size when dragging
+	 * @author Roy Lu
 	 * 
 	 */
 	@Override

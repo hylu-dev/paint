@@ -2,7 +2,7 @@ package ca.utoronto.utm.paint;
 
 /**
  * The interface for reading drawable objects from MouseEvents
- *
+ * @author Yuting Liu
  */
 public interface ReadInterface {
 	/**

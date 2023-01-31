@@ -18,7 +18,7 @@ import java.util.Observer;
 
 /**
  * A panel that contains the drawable canvas and can draw with the mouse
- *
+ * @author Roy Lu, Yuting Liu, Coco Liang, Russell Lau
  */
 class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent> {
 
@@ -38,7 +38,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 
 	/**
 	 * Constructor for a paint panel for drawing
-	 * 
+	 * @author Yuting Liu
 	 * @param model holds and sends drawing commands for the paint panel
 	 * @param view
 	 */
@@ -69,7 +69,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 
 	/**
 	 * Refreshes the canvas and applies all the drawing commands in order
-	 * 
+	 * @author Yuting Liu
 	 */
 	public void repaint() {
 		g.clearRect(0, 0, this.width, this.height);
@@ -103,7 +103,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 	
 	/**
 	 * Getter for the width of the screen
-	 * 
+	 * @author Roy Lu
 	 * @return screen width
 	 */
 	public double getScreenWidth() {
@@ -112,7 +112,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 	
 	/**
 	 * Getter for the height of the screen
-	 * 
+	 * @author Roy Lu
 	 * @return screen height
 	 */
 	public double getScreenHeight() {
@@ -121,7 +121,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 
 	/**
 	 * Changes the read interface that the mouse uses to draw
-	 * 
+	 * @author Yuting Liu
 	 * @param d read interface to set
 	 */
 	public void setReadInterface(ReadInterface d) {
@@ -130,7 +130,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 	
 	/**
 	 * Getter for the read interface
-	 * 
+	 * @author Yuting Liu
 	 * @return the read interface
 	 */
 	public ReadInterface getReadInterface() {
@@ -139,7 +139,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 
 	/**
 	 * Getter for the paint model
-	 * 
+	 * @author Yuting Liu
 	 * @return the paint model
 	 */
 	public PaintModel getModel() {
@@ -148,7 +148,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 	
 	/**
 	 * getter for the canvas
-	 * 
+	 * @author Roy Lu
 	 * @return the canvas
 	 */
 	public ResizableCanvas getCanvas() {
@@ -157,7 +157,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 
 	/**
 	 * Interprets which mouse events are being called
-	 * 
+	 * @author Roy Lu
 	 */
 	@Override
 	public void handle(MouseEvent event) {
@@ -195,7 +195,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 
 	/**
 	 * For the current readface, signals it to perform it's strategy for moving the mouse
-	 * 
+	 * @author Roy Lu
 	 * @param e the mouse event
 	 */
 	private void mouseMoved(MouseEvent e) {
@@ -204,7 +204,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 	
 	/**
 	 * For the current readface, signals it to perform it's strategy for dragging the mouse
-	 * 
+	 * @author Roy Lu
 	 * @param e the mouse event
 	 */
 	private void mouseDragged(MouseEvent e) {
@@ -214,7 +214,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 
 	/**
 	 * For the current readface, signals it to perform it's strategy for clicking the mouse
-	 * 
+	 * @author Roy Lu
 	 * @param e the mouse event
 	 */
 	private void mouseClicked(MouseEvent e) {
@@ -223,7 +223,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 	
 	/**
 	 * For the current readface, signals it to perform it's strategy for pressing the mouse
-	 * 
+	 * @author Roy Lu
 	 * @param e the mouse event
 	 */
 	private void mousePressed(MouseEvent e) {
@@ -236,7 +236,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 	
 	/**
 	 * For the current readface, signals it to perform it's strategy for releasing the mouse
-	 * 
+	 * @author Roy Lu
 	 * @param e the mouse event
 	 */
 	private void mouseReleased(MouseEvent e) {
@@ -245,7 +245,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 
 	/**
 	 * getter for the horizontal position of the mouse
-	 * 
+	 * @author Yuting Liu
 	 * @return the mouse x position
 	 */
 	public int getMouseX() {
@@ -254,7 +254,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 	
 	/**
 	 * getter for the vertical position of the mouse
-	 * 
+	 * @author Yuting Liu
 	 * @return the mouse y position
 	 */
 	public int getMouseY() {
@@ -263,7 +263,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 	
 	/**
 	 * For the current readface, signals it to perform it's strategy for entering with the mouse
-	 * 
+	 * @author Yuting Liu
 	 * @param e the mouse event
 	 */
 	private void mouseEntered(MouseEvent e) {
@@ -271,7 +271,7 @@ class PaintPanel extends StackPane implements Observer, EventHandler<MouseEvent>
 	
 	/**
 	 * For the current readface, signals it to perform it's strategy for exiting the mouse
-	 * 
+	 * @author Yuting Liu
 	 * @param e the mouse event
 	 */
 	private void mouseExited(MouseEvent e) {

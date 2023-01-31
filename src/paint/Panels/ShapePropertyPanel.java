@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 
 /**
  * Panel that holds all property changing events towards a graphics context
- *
+ * @author Roy Lu
  */
 public class ShapePropertyPanel extends GridPane {
 
@@ -35,7 +35,7 @@ public class ShapePropertyPanel extends GridPane {
 	
 	/**
 	 * Constructor for a property panel
-	 * 
+	 * @author Roy Lu
 	 * @param view for properties to be applied to
 	 */
 	public ShapePropertyPanel(View view) {
@@ -112,7 +112,7 @@ public class ShapePropertyPanel extends GridPane {
 	
 	/**
 	 * getter for whether checkFill is checked
-	 * 
+	 * @author Roy Lu
 	 * @return boolean of checkFill state
 	 */
 	public Boolean getCheckFill() {

@@ -2,8 +2,8 @@ package ca.utoronto.utm.paint;
 
 /**
  * 
- *Creates a line follows the mouse when dragged
- *
+ * Creates a line that follows the mouse when dragged
+ * @author Roy Lu
  */
 public class ReadSquiggles implements ReadInterface {
 	
@@ -13,7 +13,7 @@ public class ReadSquiggles implements ReadInterface {
 	/**
 	 * 
 	 * Constructor for Squiggles
-	 * 
+	 * @author Roy Lu
 	 * @param m The squiggle to be drawn
 	 */
 	public ReadSquiggles(PaintModel m) {
@@ -22,6 +22,7 @@ public class ReadSquiggles implements ReadInterface {
 	
 	/**
 	 * Creates a new Squiggle command
+	 * @author Roy Lu
 	 */
 	@Override
 	public void mousePressed(Point p) {
@@ -35,6 +36,7 @@ public class ReadSquiggles implements ReadInterface {
 	
 	/**
 	 * Each time the mouse is dragged, add a new point to the Squiggle command that follows the mouse
+	 * @author Roy Lu
 	 */
 	@Override
 	public void mouseDragged(Point p) {

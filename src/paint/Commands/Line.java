@@ -5,7 +5,7 @@ import javafx.scene.canvas.GraphicsContext;
 /**
  * 
  * A line beginning with one point and ending with another
- * 
+ * @author Roy Lu
  *
  */
 public class Line implements ToolCommand{
@@ -16,7 +16,7 @@ public class Line implements ToolCommand{
 	/**
 	 * 
 	 * Constructor for an unspecified line 
-	 * 
+	 * @author Roy Lu
 	 * @param point1 the beginning of the line
 	 * @param point2 the end of the line
 	 */
@@ -28,7 +28,7 @@ public class Line implements ToolCommand{
 	/**
 	 * 
 	 * Constructor for a line 
-	 * 
+	 * @author Roy Lu
 	 * @param point1 the beginning of the line
 	 * @param point2 the end of the line
 	 */
@@ -39,7 +39,7 @@ public class Line implements ToolCommand{
 	
 	/**
 	 * gets the first point
-	 * 
+	 * @author Roy Lu
 	 * @return the first point
 	 */
 	public Point getStart() {
@@ -48,7 +48,7 @@ public class Line implements ToolCommand{
 	
 	/**
 	 * gets the second point
-	 * 
+	 * @author Roy Lu
 	 * @return the second point
 	 */
 	public Point getEnd() {
@@ -57,7 +57,7 @@ public class Line implements ToolCommand{
 	
 	/**
 	 * sets the first point to a new point
-	 * 
+	 * @author Roy Lu
 	 * @param p a new point
 	 */
 	public void setStart(Point p) {
@@ -66,7 +66,7 @@ public class Line implements ToolCommand{
 	
 	/**
 	 * sets the second point to a new point
-	 * 
+	 * @author Roy Lu
 	 * @param p a new point
 	 */
 	public void setEnd(Point p) {

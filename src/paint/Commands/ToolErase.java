@@ -5,7 +5,7 @@ import javafx.scene.canvas.GraphicsContext;
 
 /**
  * A tool command for a rectangle
- *
+ * @author Roy Lu
  */
 public class ToolErase implements ToolCommand {
 	
@@ -14,14 +14,14 @@ public class ToolErase implements ToolCommand {
 	
 	/**
 	 * Constructor for an eraser command
-	 * 
+	 * @author Roy Lu
 	 */
 	public ToolErase() {
 	}
 	
 	/**
 	 * Adds new points to connect the erase rectangles into a stroke
-	 * 
+	 * @author Roy Lu
 	 * @param p the point to add
 	 */
 	public void addErasePoints(Point p) {
@@ -30,14 +30,16 @@ public class ToolErase implements ToolCommand {
 	
 	/**
 	 * Iterates through all points and erases by connecting clearRects between all of the points
-	 * 
+	 * @author Roy Lu
 	 */
 	@Override
 	public void draw(GraphicsContext g) {
 		if (this.erasePoints.size() < 2) {
 			return;
 		}
-		// adds additional points to ensure an even series of clearRect's
+		// Adds additional points to ensure an even series of clearRect's
+		// mouse drag positioning is limited by framerate, this fills in
+		// gaps if mouse is moved too fast while erasing
 		for (int i = 0; i < this.erasePoints.size() - 1; i++) {
 			Point p1 = this.erasePoints.get(i);
 			Point p2 = this.erasePoints.get(i+1);

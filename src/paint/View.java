@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 /**
  * the visual representation of paint is made by displaying all the panels
- * 
+ * @author Roy Lu, Yuting Liu, Coco Liang, Russell Lau
  */
 public class View implements EventHandler<ActionEvent> {
 
