@@ -14,11 +14,11 @@ The compiled project is accessible at https://github.com/hylu-dev/paint/blob/mai
 
 This is a team project consisting of me and three other members. My role in the project was programming a number of tools, UI design, and some architecture contributions. I've included this project to demonstrate proficiency in OOP using the Java language.
 
-As this codebase has multiple contributors, there will be function comments indicating the work that I've done as well as the below highlights pointing to code I've written (unless otherwise stated).
+As this codebase has multiple contributors, there will be function docstrings indicating the work I've authored as well as the below highlights pointing to code I've written (unless otherwise stated).
 
 ### Code Highlights
 
-The project was created using the Eclipse IDE. All scripts are found within src/paint/ with the below and commented sections relevant for review.
+The project was created using the Eclipse IDE. All Relevant scripts are found within src/paint/. The highlighted code below are contributions made by me unless otherwise stated.
 
 - **paint/Commands/**
   - Utilizes the **command pattern** to generalize all updates to the canvas or drawing settings as commands
